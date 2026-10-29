@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween Decipher</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header class="header">
+      <p class="eyebrow">A HALLOWEEN MYSTERY</p>
+      <h1>DECIPHER<span> 🎃</span></h1>
+      <p class="subtitle">Five puzzles. Five secrets. One final mystery.</p>
+    </header>
+
+    <div class="progress-info">
+      <span id="levelLabel">CHALLENGE 1</span>
+      <span id="progressLabel">1 / 5</span>
+    </div>
+
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+
+    <section class="puzzle">
+      <h2 id="levelTitle"></h2>
+
+      <div id="encryptedMessage" class="encrypted"></div>
+
+      <div id="reference" class="reference hidden"></div>
+
+      <div id="imageArea" class="image-area hidden">
+        <img id="finalImage" alt="A mysterious Halloween clue">
+      </div>
+
+      <label for="answerInput">YOUR ANSWER</label>
+
+      <form id="answerForm">
+        <input
+          id="answerInput"
+          type="text"
+          placeholder="Decode the secret..."
+          autocomplete="off"
+          required
+        >
+        <button id="submitButton" type="submit">
+          CHECK ANSWER
+        </button>
+      </form>
+
+      <p id="feedback" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer>
+      <span>ENTER IF YOU DARE</span>
+      <span>☠ FIVE CHALLENGES AWAIT ☠</span>
+    </footer>
+  </main>
+</body>
+</html>
